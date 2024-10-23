@@ -7,13 +7,13 @@ import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+// import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
+// import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Koperasi Sinara Artga — Dari Anggota Untuk Kesejahteraan Bersama',
+  title: 'Koperasi Sinara Artha',
   ignoreTitleTemplate: true,
 };
 ---
@@ -24,29 +24,30 @@ const metadata = {
   <Hero
     actions={[
       {
-        variant: 'primary',
+        variant: 'secondary',
         text: 'Get template',
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
         icon: 'tabler:download',
+        style: { backgroundColor: '#FF9900' }, // Menambahkan properti style untuk mengubah warna latar belakang tombol menjadi kuning tua
       },
       { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/heroimage.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
+      Solusi Keuangan <span class="hidden xl:inline">yang Mudah dan Menguntungkan bersama</span><br />
+    <span class="text-accent dark:text-white highlight"> Koperasi Sinara Artha</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
+        <span class="font-semibold text-green-600">Tabungan</span> yang aman, 
+        <span class="font-semibold text-blue-600">Deposito Berjangka</span> dengan bunga tinggi, dan
+        <span class="font-semibold text-purple-600">Pinjaman</span> yang fleksibel.</span
       >
-      <span class="block mb-1 font-bold text-blue-600 sm:hidden">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      <span class="block mb-1 font-bold text-yellow-600 sm:hidden">Solusi Keuangan Terpercaya.</span>
+      Nikmati kemudahan dan keuntungan dalam mengelola keuangan Anda bersama kami. Kami hadir untuk membantu Anda mencapai kesejahteraan finansial.
     </Fragment>
   </Hero>
 
@@ -58,45 +59,45 @@ const metadata = {
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    tagline="Keuntungan"
+    title="Manfaat Menjadi Nasabah Koperasi Sinara Artha"
+    subtitle="Nikmati berbagai keuntungan dan kemudahan dalam mengelola keuangan Anda bersama Koperasi Sinara Artha."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Bunga Tabungan Kompetitif',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Dapatkan imbal hasil yang menarik dari tabungan Anda dengan suku bunga yang kompetitif dibandingkan bank konvensional.',
+        icon: 'tabler:coin',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Pinjaman Mudah dan Cepat',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'Proses pengajuan pinjaman yang sederhana dan pencairan dana yang cepat untuk memenuhi kebutuhan finansial Anda.',
+        icon: 'tabler:cash-banknote',
       },
       {
-        title: 'Best Practices',
+        title: 'Layanan Keuangan Terpercaya',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          'Nikmati rasa aman dengan layanan keuangan yang dikelola secara profesional dan transparan oleh tim berpengalaman.',
+        icon: 'tabler:shield-check',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Fleksibilitas Produk',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+          'Pilih dari berbagai produk keuangan yang dapat disesuaikan dengan kebutuhan dan tujuan finansial Anda.',
+        icon: 'tabler:adjustments-horizontal',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Edukasi Keuangan',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'Akses ke program edukasi keuangan untuk meningkatkan pemahaman dan keterampilan Anda dalam mengelola keuangan pribadi.',
+        icon: 'tabler:school',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Komunitas yang Solid',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'Bergabunglah dengan komunitas nasabah yang saling mendukung dan berbagi pengalaman dalam mencapai kesuksesan finansial.',
+        icon: 'tabler:users-group',
       },
     ]}
   />
@@ -105,33 +106,33 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Layanan Unggulan"
+    title="Solusi Keuangan Terpercaya dari Koperasi Sinara Artha"
     items={[
       {
-        title: 'Built on top of Astro 4.0',
+        title: 'Simpanan Berjangka',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Investasikan dana Anda dengan aman dan dapatkan imbal hasil yang menarik melalui program simpanan berjangka kami.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Pinjaman Modal Usaha',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Dukung pertumbuhan bisnis Anda dengan pinjaman modal usaha yang fleksibel dan bunga kompetitif.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Tabungan Pendidikan',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Rencanakan masa depan cerah anak Anda dengan tabungan pendidikan yang kami tawarkan.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      src: 'https://images.unsplash.com/photo-1556742111-a301076d9d18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Layanan Keuangan Koperasi',
     }}
   >
     <Fragment slot="content">
-      <h3 class="mb-2 text-2xl font-bold tracking-tight dark:text-white sm:text-3xl">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="mb-2 text-2xl font-bold tracking-tight dark:text-white sm:text-3xl">Membangun Masa Depan Finansial Bersama</h3>
+      Koperasi Sinara Artha hadir untuk membantu Anda mencapai tujuan keuangan dengan solusi yang tepat dan terpercaya.
     </Fragment>
 
     <Fragment slot="bg">
@@ -145,31 +146,31 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Konsultasi Keuangan',
+        description: 'Dapatkan panduan profesional untuk mengelola keuangan Anda dengan lebih baik melalui layanan konsultasi kami.',
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Asuransi Mikro',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'Lindungi diri dan keluarga Anda dengan produk asuransi mikro yang terjangkau dan sesuai kebutuhan.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Pembayaran Tagihan',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          'Nikmati kemudahan pembayaran berbagai tagihan rutin Anda melalui layanan satu pintu kami.',
       },
       {
-        title: 'Integration of media',
+        title: 'Program Pemberdayaan',
         description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'Ikuti berbagai program pemberdayaan ekonomi untuk meningkatkan kesejahteraan dan keterampilan finansial Anda.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
+      src: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80',
+      alt: 'Layanan Tambahan Koperasi',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">Tingkatkan kualitas hidup Anda bersama Koperasi Sinara Artha.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -183,31 +184,31 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
+        title: 'Kemudahan Akses',
         description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+          'Akses layanan kami kapan saja dan di mana saja melalui aplikasi mobile dan website yang user-friendly.',
       },
       {
-        title: 'Continuous improvement',
+        title: 'Keamanan Terjamin',
         description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+          'Data dan transaksi Anda dilindungi dengan sistem keamanan terkini untuk memberikan ketenangan pikiran.',
       },
       {
-        title: 'Time and resource efficiency',
+        title: 'Layanan Pelanggan 24/7',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+          'Tim support kami siap membantu Anda setiap saat untuk menjawab pertanyaan dan menyelesaikan masalah.',
       },
       {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        title: 'Reward Program',
+        description: 'Nikmati berbagai keuntungan menarik melalui program loyalitas kami untuk nasabah setia.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      src: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
+      alt: 'Keunggulan Layanan',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">Pengalaman perbankan yang lebih baik untuk Anda.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -217,93 +218,94 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Bergabung dengan Koperasi Sinara Artha sangatlah mudah."
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Langkah 1: <span class="font-medium">Pendaftaran</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+          'Isi formulir pendaftaran online atau kunjungi kantor kami terdekat. Siapkan dokumen identitas dan bukti alamat Anda.',
+        icon: 'tabler:clipboard-text',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Langkah 2: <span class="font-medium">Verifikasi</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
-        description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Ready!',
+          'Tim kami akan memverifikasi data Anda. Proses ini biasanya memakan waktu 1-2 hari kerja.',
         icon: 'tabler:check',
+      },
+      {
+        title: 'Langkah 3: <span class="font-medium">Setoran Awal</span>',
+        description:
+          'Lakukan setoran awal sesuai dengan jenis keanggotaan yang Anda pilih. Kami menawarkan berbagai opsi yang fleksibel.',
+        icon: 'tabler:coin',
+      },
+      {
+        title: 'Selesai!',
+        description: 'Selamat! Anda resmi menjadi anggota Koperasi Sinara Artha. Nikmati berbagai layanan dan manfaat keanggotaan Anda.',
+        icon: 'tabler:confetti',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      src: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80',
+      alt: 'Langkah Bergabung',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
+    title="Produk dan Layanan Unggulan"
+    subtitle="Koperasi Sinara Artha menyediakan berbagai produk dan layanan keuangan untuk memenuhi kebutuhan Anda"
+    tagline="Solusi Keuangan"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
+        title: 'Tabungan Reguler',
+        description: 'Simpan dana Anda dengan aman dan dapatkan bunga kompetitif. Akses mudah kapan saja.',
+        icon: 'tabler:wallet',
       },
       {
-        title: 'Heros',
+        title: 'Deposito',
         description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
+          'Investasikan dana Anda untuk jangka waktu tertentu dengan imbal hasil yang lebih tinggi.',
+        icon: 'tabler:chart-pie',
       },
       {
-        title: 'Features',
+        title: 'Pinjaman Multiguna',
         description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
+          'Dapatkan pinjaman untuk berbagai keperluan dengan proses cepat dan bunga bersaing.',
+        icon: 'tabler:cash',
       },
       {
-        title: 'Content',
+        title: 'Pembiayaan UMKM',
         description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
+          'Dukung pertumbuhan usaha Anda dengan skema pembiayaan yang disesuaikan untuk UMKM.',
+        icon: 'tabler:building-store',
       },
       {
-        title: 'Call-to-Action',
+        title: 'Asuransi',
         description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
+          'Lindungi diri dan keluarga Anda dengan berbagai produk asuransi yang kami tawarkan.',
+        icon: 'tabler:shield-check',
       },
       {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
+        title: 'Pembayaran Online',
+        description: 'Lakukan berbagai pembayaran dengan mudah melalui platform online kami.',
+        icon: 'tabler:device-mobile',
       },
       {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
+        title: 'Edukasi Keuangan',
+        description: 'Ikuti seminar dan pelatihan untuk meningkatkan literasi keuangan Anda.',
+        icon: 'tabler:school',
       },
       {
-        title: 'Contact',
+        title: 'Konsultasi Bisnis',
         description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
+          'Dapatkan saran dari para ahli untuk mengembangkan bisnis Anda ke level berikutnya.',
+        icon: 'tabler:users',
       },
       {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
+        title: 'Program CSR',
+        description: 'Bersama-sama kita berkontribusi untuk masyarakat melalui program tanggung jawab sosial.',
+        icon: 'tabler:heart-handshake',
       },
     ]}
   >
@@ -314,65 +316,62 @@ const metadata = {
 
   <!-- HighlightedPosts Widget ******* -->
 
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
-  />
+  <!-- <BlogLatestPosts
+    title="Artikel Terbaru"
+    information={`Temukan informasi terkini seputar keuangan, tips mengelola uang, dan berita terbaru dari Koperasi Sinara Artha di blog kami.`}
+  /> -->
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    title="Pertanyaan yang Sering Diajukan"
+    subtitle="Temukan jawaban atas pertanyaan umum seputar layanan dan produk Koperasi Sinara Artha."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'Apa syarat untuk menjadi anggota Koperasi Sinara Artha?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          'Untuk menjadi anggota, Anda perlu berusia minimal 17 tahun, memiliki KTP yang masih berlaku, dan melakukan setoran awal sesuai ketentuan. Kami juga menerima mahasiswa dengan kartu pelajar yang masih aktif.',
       },
       {
-        title: 'What do I need to start?',
+        title: 'Berapa suku bunga pinjaman di Koperasi Sinara Artha?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'Suku bunga pinjaman kami bervariasi tergantung jenis dan jangka waktu pinjaman. Kami menawarkan suku bunga yang kompetitif mulai dari 0,8% per bulan. Untuk informasi lebih lanjut, silakan hubungi customer service kami.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'Apakah ada jaminan keamanan untuk simpanan saya?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'Ya, keamanan dana nasabah adalah prioritas utama kami. Simpanan Anda dilindungi oleh asuransi simpanan sesuai dengan peraturan yang berlaku. Kami juga menerapkan sistem keamanan berlapis untuk melindungi data dan transaksi Anda.',
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'Bagaimana cara mengajukan pinjaman di Koperasi Sinara Artha?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          'Anda dapat mengajukan pinjaman secara online melalui website atau aplikasi kami, atau datang langsung ke kantor cabang terdekat. Siapkan dokumen yang diperlukan seperti KTP, slip gaji, dan dokumen pendukung lainnya. Tim kami akan memproses pengajuan Anda dalam waktu 3-5 hari kerja.',
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'Apakah Koperasi Sinara Artha menyediakan layanan mobile banking?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          'Ya, kami menyediakan aplikasi mobile banking yang dapat diunduh di Google Play Store dan App Store. Melalui aplikasi ini, Anda dapat melakukan berbagai transaksi seperti cek saldo, transfer, pembayaran tagihan, dan lainnya dengan mudah dan aman.',
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'Bagaimana jika saya mengalami kesulitan dalam pembayaran angsuran?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          'Kami memahami bahwa situasi keuangan dapat berubah. Jika Anda mengalami kesulitan dalam pembayaran angsuran, segera hubungi kami. Tim kami akan membantu mencari solusi terbaik, termasuk kemungkinan restrukturisasi pinjaman sesuai dengan kebijakan yang berlaku.',
       },
     ]}
   />
 
   <!-- Stats Widget ****************** -->
 
-  <Stats
+  <!-- <Stats
     stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
+      { title: 'Anggota Aktif', amount: '15K+' },
+      { title: 'Total Aset', amount: 'Rp 500M+' },
+      { title: 'Kantor Cabang', amount: '25' },
+      { title: 'Tahun Pengalaman', amount: '15+' },
     ]}
-  />
+  /> -->
 
   <!-- CallToAction Widget *********** -->
 
@@ -380,20 +379,17 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Daftar Sekarang',
+        href: '/daftar',
+        icon: 'tabler:user-plus',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Bergabung dengan<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Koperasi Sinara Artha</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Wujudkan impian finansial Anda bersama kami. <br class="hidden md:inline" />Jangan lewatkan kesempatan untuk meraih masa depan yang lebih cerah!
     </Fragment>
   </CallToAction>
-</Layout>
