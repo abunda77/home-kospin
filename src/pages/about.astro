@@ -7,7 +7,7 @@ import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'About us',
+  title: 'Tentang Koperasi Sinara Artha',
 };
 ---
 
@@ -15,61 +15,61 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="About us"
+    tagline="Tentang Kami"
     image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
+      src: '~/assets/images/heroimage.png',
+      alt: 'Koperasi Sinara Artha Hero Image',
     }}
   >
     <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white highlight"> Beautiful Website Templates</span>
+      Solusi Keuangan Terpercaya bersama <br />
+      <span class="text-accent dark:text-yellow-500 highlight">Koperasi Sinara Artha</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
+      Koperasi Sinara Artha hadir sebagai mitra terpercaya dalam mewujudkan kesejahteraan finansial anggota. 
+      Dengan fokus pada layanan simpanan, pinjaman, dan pemberdayaan ekonomi, 
+      kami berkomitmen untuk memberikan solusi keuangan yang aman, menguntungkan, dan sesuai kebutuhan Anda.
     </Fragment>
   </Hero>
 
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="Statistics about us"
+    title="Pencapaian Kami"
     stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
+      { title: 'Anggota Aktif', amount: '1000+' },
+      { title: 'Total Aset', amount: 'Rp 10M+' },
+      { title: 'Tahun Pengalaman', amount: '5+' },
+      { title: 'Tingkat Kepuasan', amount: '98%' },
     ]}
   />
 
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
+    title="Produk Unggulan Kami"
+    subtitle="Koperasi Sinara Artha menawarkan berbagai produk keuangan yang dirancang untuk memenuhi kebutuhan anggota."
     columns={3}
     isBeforeContent={true}
     items={[
       {
-        title: 'Educational',
+        title: 'Simpanan Berjangka',
         description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
-        icon: 'tabler:template',
+          'Investasikan dana Anda dengan aman dan dapatkan imbal hasil yang menarik. Tersedia untuk jangka waktu 3, 6, 12, dan 24 bulan.',
+        icon: 'tabler:coin',
       },
       {
-        title: 'Interior Design',
+        title: 'Pinjaman',
         description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
-        icon: 'tabler:template',
+          'Dapatkan pinjaman dengan bunga kompetitif dan proses yang cepat untuk berbagai kebutuhan Anda.',
+        icon: 'tabler:cash',
       },
       {
-        title: 'Photography',
+        title: 'Tabungan',
         description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
-        icon: 'tabler:template',
+          'Simpan uang Anda dengan aman dan nikmati kemudahan akses serta bunga yang menguntungkan.',
+        icon: 'tabler:coin',
       },
     ]}
   />
@@ -81,68 +81,50 @@ const metadata = {
     isAfterContent={true}
     items={[
       {
-        title: 'E-commerce',
+        title: 'Bunga Kompetitif',
         description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
-        icon: 'tabler:template',
+          'Nikmati suku bunga simpanan hingga 9,25% per tahun untuk simpanan berjangka 24 bulan.',
+        icon: 'tabler:chart-arrows',
       },
       {
-        title: 'Blog',
+        title: 'Proses Cepat',
         description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
-        icon: 'tabler:template',
+          'Pengajuan dan pencairan dana yang cepat untuk memenuhi kebutuhan finansial Anda.',
+        icon: 'tabler:rocket',
       },
       {
-        title: 'Business',
+        title: 'Layanan Prima',
         description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Branding',
-        description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Medical',
-        description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
-        icon: 'tabler:template',
+          'Tim kami siap membantu Anda dengan pelayanan yang ramah dan profesional.',
+        icon: 'tabler:user-check',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Colorful Image',
+      alt: 'Koperasi Sinara Artha Features Image',
     }}
   />
 
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
+    title="Nilai-Nilai Kami"
+    subtitle="Koperasi Sinara Artha beroperasi berdasarkan prinsip-prinsip yang menjunjung tinggi kepentingan anggota dan masyarakat."
     items={[
       {
-        title: 'Customer-centric approach',
+        title: 'Kepercayaan',
         description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
+          'Kami menjaga kepercayaan anggota dengan mengelola dana secara profesional dan transparan.',
       },
       {
-        title: 'Constant Improvement',
+        title: 'Pemberdayaan',
         description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
+          'Kami berkomitmen untuk memberdayakan anggota melalui edukasi keuangan dan peluang pengembangan usaha.',
       },
       {
-        title: 'Ethical Practices',
+        title: 'Inovasi',
         description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+          'Kami terus berinovasi dalam layanan untuk memberikan solusi keuangan terbaik bagi anggota.',
       },
     ]}
   />
@@ -150,30 +132,30 @@ const metadata = {
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Achievements"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
+    title="Pencapaian"
+    subtitle="Perjalanan Koperasi Sinara Artha dalam melayani anggota dan masyarakat."
     isReversed={true}
     callToAction={{
-      text: 'See more',
+      text: 'Bergabung Sekarang',
       href: '/',
     }}
     items={[
       {
-        title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
-        icon: 'tabler:globe',
+        title: 'Pertumbuhan Anggota',
+        description: 'Jumlah anggota kami terus bertambah, mencerminkan kepercayaan masyarakat terhadap layanan kami.',
+        icon: 'tabler:users',
       },
       {
-        title: 'Positive customer feedback and reviews',
+        title: 'Peningkatan Aset',
         description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
-        icon: 'tabler:message-star',
+          'Total aset kami telah mencapai lebih dari Rp 10 Miliar, menunjukkan kekuatan finansial koperasi.',
+        icon: 'tabler:chart-bar',
       },
       {
-        title: 'Awards and recognition as industry experts',
+        title: 'Kontribusi Sosial',
         description:
-          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
-        icon: 'tabler:award',
+          'Kami aktif berkontribusi dalam program pemberdayaan ekonomi masyarakat dan kegiatan sosial.',
+        icon: 'tabler:heart-handshake',
       },
     ]}
   />
@@ -181,47 +163,47 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Our locations"
-    tagline="Find us"
-    columns={4}
-    items={[
-      {
-        title: 'EE.UU',
-        description: '1234 Lorem Ipsum St, 12345, Miami',
-      },
-      {
-        title: 'Spain',
-        description: '5678 Lorem Ipsum St, 56789, Madrid',
-      },
-      {
-        title: 'Australia',
-        description: '9012 Lorem Ipsum St, 90123, Sydney',
-      },
-      {
-        title: 'Brazil',
-        description: '3456 Lorem Ipsum St, 34567, São Paulo',
-      },
-    ]}
-  />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Technical Support"
-    tagline="Contact us"
+    title="Informasi Kontak"
+    subtitle="Hubungi kami untuk informasi lebih lanjut atau bantuan yang Anda perlukan."
     columns={2}
     items={[
       {
-        title: 'Chat with us',
+        title: 'Kantor Pusat',
         description:
-          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
-        icon: 'tabler:messages',
+          'Jl. Lebak Rejo Utara 2 no.14A, Dukuhsetro Tambaksari, Surabaya, Jawa Timur 60134',
+        icon: 'tabler:map-pin',
       },
       {
-        title: 'Call us',
+        title: 'Layanan Pelanggan',
         description:
-          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
-        icon: 'tabler:headset',
+          'Telepon: +62 31 99923737<br>Email: contact@sinaraartha.com',
+        icon: 'tabler:phone',
+      },
+    ]}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Legalitas"
+    subtitle="Koperasi Sinara Artha beroperasi dengan izin resmi dan terdaftar secara legal."
+    columns={2}
+    items={[
+      {
+        title: 'Nomor Badan Hukum',
+        description: 'AHU-0008619.AH.01.26 / 2021',
+      },
+      {
+        title: 'Nomor Induk Berusaha (NIB)',
+        description: '1285 000 320139',
+      },
+      {
+        title: 'NPWP',
+        description: '41.643.025.4-619.000',
+      },
+      {
+        title: 'Jenis Koperasi',
+        description: 'Koperasi Produsen dan Simpan Pinjam',
       },
     ]}
   />

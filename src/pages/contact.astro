@@ -5,24 +5,24 @@ import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: 'Kontak',
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
+  <HeroText tagline="Kontak" title="Mari Terhubung!" />
 
   <ContactUs
     id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
+    title="Hubungi Kami Sekarang!"
+    subtitle="Untuk jawaban lebih cepat, silakan jelajahi bagian FAQ kami. Anda mungkin menemukan solusi yang Anda cari di sana! Jika tidak, tim layanan kami siap membantu Anda."
     inputs={[
       {
         type: 'text',
         name: 'name',
-        label: 'Name',
+        label: 'Nama',
       },
       {
         type: 'email',
@@ -31,47 +31,47 @@ const metadata = {
       },
     ]}
     textarea={{
-      label: 'Message',
+      label: 'Pesan',
     }}
     disclaimer={{
       label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+        'Dengan mengirimkan formulir kontak ini, Anda menyetujui pengumpulan data pribadi Anda.',
     }}
-    description="Our support team typically responds within 24 business hours."
+    description="Tim layanan kami biasanya merespons dalam waktu 24 jam kerja."
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="We are here to help!"
+    title="Kami Siap Membantu!"
     items={[
       {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
+        title: 'Layanan Umum',
+        description: `Hubungi kami untuk pertanyaan terkait manajemen keanggotaan, informasi produk simpanan dan pinjaman, atau pertanyaan umum tentang layanan koperasi.`,
       },
       {
-        title: 'Contact sales',
+        title: 'Layanan Keuangan',
         description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
+          'Konsultasikan dengan kami mengenai produk simpanan, pengajuan pinjaman, suku bunga, jangka waktu, dan layanan keuangan lainnya.',
       },
       {
-        title: 'Technical support',
+        title: 'Dukungan Anggota',
         description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
+          'Hubungi kami untuk bantuan seputar keanggotaan, pembayaran angsuran, informasi saldo, atau kendala teknis lainnya terkait layanan koperasi.',
       },
       {
-        title: 'Phone',
-        description: '+1 (234) 567-890',
+        title: 'Telepon',
+        description: '(021) 1234-5678',
         icon: 'tabler:headset',
       },
       {
         title: 'Email',
-        description: 'contact@support.com',
+        description: 'info@sinaraartha.co.id',
         icon: 'tabler:mail',
       },
       {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
+        title: 'Lokasi',
+        description: 'Jl. Raya Utama No. 123, Jakarta Selatan, 12345',
         icon: 'tabler:map-pin',
       },
     ]}
