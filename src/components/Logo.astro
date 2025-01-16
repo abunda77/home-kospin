@@ -1,27 +1,29 @@
 ---
-import { UI } from 'astrowind:config';
-import LogoLight from '~/assets/images/logo_sinarartha_dark.png';
-import LogoDark from '~/assets/images/logo_sinarartha_light.png';
+import { UI } from "astrowind:config";
+import LogoLight from "~/assets/images/logo_sinarartha_dark.png";
+import LogoDark from "~/assets/images/logo_sinarartha_light.png";
 const { theme: defaultTheme = UI.theme } = Astro.props;
 ---
 
 <script is:inline define:vars={{ defaultTheme, LogoDark, LogoLight }}>
   function updateLogo() {
-    const logo = document.getElementById('logo');
-    const isDarkTheme = document.documentElement.classList.contains('dark') || defaultTheme?.toLowerCase() === 'dark';
+    const logo = document.getElementById("logo");
+    const isDarkTheme =
+      document.documentElement.classList.contains("dark") ||
+      defaultTheme?.toLowerCase() === "dark";
     logo.src = isDarkTheme ? LogoLight.src : LogoDark.src;
   }
 
   // Panggil fungsi saat halaman dimuat
-  document.addEventListener('DOMContentLoaded', updateLogo);
+  document.addEventListener("DOMContentLoaded", updateLogo);
 
   // Panggil fungsi saat tema berubah
-  document.addEventListener('astro:after-swap', updateLogo);
+  document.addEventListener("astro:after-swap", updateLogo);
 
   // Tambahkan event listener untuk perubahan tema
   const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
-      if (mutation.attributeName === 'class') {
+      if (mutation.attributeName === "class") {
         updateLogo();
       }
     });
@@ -30,10 +32,10 @@ const { theme: defaultTheme = UI.theme } = Astro.props;
   observer.observe(document.documentElement, { attributes: true });
 </script>
 
-<img 
+<img
   id="logo"
-  src={defaultTheme?.toLowerCase() === 'dark' ? LogoLight.src : LogoDark.src} 
-  alt="Logo Sinara Artha" 
-  class="self-center ml-2 text-2xl font-bold text-gray-900 rtl:ml-0 rtl:mr-2 md:text-xl whitespace-nowrap dark:text-white" 
-  style="width: 200px; height: auto;" 
+  src={defaultTheme?.toLowerCase() === "dark" ? LogoLight.src : LogoDark.src}
+  alt="Logo Sinara Artha"
+  class="self-center ml-2 text-2xl font-bold text-gray-900 rtl:ml-0 rtl:mr-2 md:text-xl whitespace-nowrap dark:text-white"
+  style="width: 250px; height: auto;"
 />
