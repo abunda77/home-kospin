@@ -1,11 +1,11 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
-import HeroText from '~/components/widgets/HeroText.astro';
-import ContactUs from '~/components/widgets/Contact.astro';
-import Features2 from '~/components/widgets/Features2.astro';
+import Layout from "~/layouts/PageLayout.astro";
+import HeroText from "~/components/widgets/HeroText.astro";
+import ContactUs from "~/components/widgets/Contact.astro";
+import Features2 from "~/components/widgets/Features2.astro";
 
 const metadata = {
-  title: 'Kontak',
+  title: "Kontak",
 };
 ---
 
@@ -20,22 +20,22 @@ const metadata = {
     subtitle="Untuk jawaban lebih cepat, silakan jelajahi bagian FAQ kami. Anda mungkin menemukan solusi yang Anda cari di sana! Jika tidak, tim layanan kami siap membantu Anda."
     inputs={[
       {
-        type: 'text',
-        name: 'name',
-        label: 'Nama',
+        type: "text",
+        name: "name",
+        label: "Nama",
       },
       {
-        type: 'email',
-        name: 'email',
-        label: 'Email',
+        type: "email",
+        name: "email",
+        label: "Email",
       },
     ]}
     textarea={{
-      label: 'Pesan',
+      label: "Pesan",
     }}
     disclaimer={{
       label:
-        'Dengan mengirimkan formulir kontak ini, Anda menyetujui pengumpulan data pribadi Anda.',
+        "Dengan mengirimkan formulir kontak ini, Anda menyetujui pengumpulan data pribadi Anda.",
     }}
     description="Tim layanan kami biasanya merespons dalam waktu 24 jam kerja."
   />
@@ -46,33 +46,34 @@ const metadata = {
     title="Kami Siap Membantu!"
     items={[
       {
-        title: 'Layanan Umum',
+        title: "Layanan Umum",
         description: `Hubungi kami untuk pertanyaan terkait manajemen keanggotaan, informasi produk simpanan dan pinjaman, atau pertanyaan umum tentang layanan koperasi.`,
       },
       {
-        title: 'Layanan Keuangan',
+        title: "Layanan Keuangan",
         description:
-          'Konsultasikan dengan kami mengenai produk simpanan, pengajuan pinjaman, suku bunga, jangka waktu, dan layanan keuangan lainnya.',
+          "Konsultasikan dengan kami mengenai produk simpanan, pengajuan pinjaman, suku bunga, jangka waktu, dan layanan keuangan lainnya.",
       },
       {
-        title: 'Dukungan Anggota',
+        title: "Dukungan Anggota",
         description:
-          'Hubungi kami untuk bantuan seputar keanggotaan, pembayaran angsuran, informasi saldo, atau kendala teknis lainnya terkait layanan koperasi.',
+          "Hubungi kami untuk bantuan seputar keanggotaan, pembayaran angsuran, informasi saldo, atau kendala teknis lainnya terkait layanan koperasi.",
       },
       {
-        title: 'Telepon',
-        description: '(021) 1234-5678',
-        icon: 'tabler:headset',
+        title: "Telepon",
+        description: "087778715788",
+        icon: "tabler:headset",
       },
       {
-        title: 'Email',
-        description: 'info@sinaraartha.co.id',
-        icon: 'tabler:mail',
+        title: "Email",
+        description: "cs@kospinsinaraartha.co.id",
+        icon: "tabler:mail",
       },
       {
-        title: 'Lokasi',
-        description: 'Jl. Raya Utama No. 123, Jakarta Selatan, 12345',
-        icon: 'tabler:map-pin',
+        title: "Lokasi",
+        description:
+          "Easten Park Residence Blok B7 No. 7, Sukolilo, Surabaya 60111",
+        icon: "tabler:map-pin",
       },
     ]}
   />
